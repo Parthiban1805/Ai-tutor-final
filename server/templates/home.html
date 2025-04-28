@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Academic PDF QA</title>
+  <style>
+    /* Color palette */
+    :root {
+      --background: #f5f7fa;
+      --surface: #ffffff;
+      --primary: #0052cc;
+      --primary-dark: #003d99;
+      --text-primary: #1a1a1a;
+      --text-secondary: #555555;
+      --border: #e0e0e0;
+      --success: #d4edda;
+      --danger: #f8d7da;
+      --warning: #fff3cd;
+    }
+
+    /* Global reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text-primary);
+      padding: 2rem;
+      line-height: 1.6;
+    }
+
+    h1 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--primary-dark);
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    /* Flash messages */
+    .flash {
+      border-radius: 4px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border);
+    }
+    .flash.success {
+      background: var(--success);
+      border-color: #c3e6cb;
+      color: #155724;
+    }
+    .flash.danger {
+      background: var(--danger);
+      border-color: #f5c6cb;
+      color: #721c24;
+    }
+    .flash.warning {
+      background: var(--warning);
+      border-color: #ffeeba;
+      color: #856404;
+    }
+
+    form {
+      background: var(--surface);
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      border: 1px solid var(--border);
+    }
+
+    input[type="file"],
+    input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: var(--text-secondary);
+    }
+    input[type="file"] {
+      padding: 0.5rem;
+    }
+
+    input[type="submit"] {
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+    input[type="submit"]:hover {
+      background-color: var(--primary-dark);
+    }
+
+    .answer {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+    .answer h3 {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+    }
+    .answer div {
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+    }
+    .answer p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Academic PDF Q&A</h1>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, msg in messages %}
+      <div class="flash {{ category }}">{{ msg }}</div>
+    {% endfor %}
+  {% endwith %}
+
+  <h2>1) Upload your PDF</h2>
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="pdf" accept=".pdf">
+    <input type="submit" value="Upload & Index">
+  </form>
+
+  <h2>2) Ask a question</h2>
+  <form method="post">
+    <input type="text" name="question" placeholder="Enter your question here…">
+    <input type="submit" value="Ask">
+  </form>
+
+  {% if answer %}
+    <div class="answer">
+      <h3>Answer:</h3>
+      <div>{{ answer | safe }}</div>
+      {% if sources %}
+        <p><strong>Sources (pages):</strong> {{ sources | join(", ") }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+</body>
+</html>

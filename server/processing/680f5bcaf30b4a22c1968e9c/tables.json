@@ -1,0 +1,66 @@
+[
+  {
+    "page": 5,
+    "table_num": 1,
+    "data": [
+      {
+        "S. No.": "1.",
+        "SQL": "SQL databases organize\ndata in structured tables.",
+        "NO SQL": "NoSQL databases support\nvarious data models.",
+        "NEW SQL": "NewSQL databases\nmaintain a relational data\nstructure."
+      },
+      {
+        "S. No.": "2.",
+        "SQL": "SQL databases employ a\nrigid data schema that\ndefines the structure and\norganization of data.",
+        "NO SQL": "NoSQL databases have a\nflexible schema.",
+        "NEW SQL": "NewSQL databases also\nsupport a flexible schema."
+      },
+      {
+        "S. No.": "3.",
+        "SQL": "SQL is the standard query\nlanguage used.",
+        "NO SQL": "NoSQL databases have\ndiverse query languages.",
+        "NEW SQL": "NewSQL databases also\nuse SQL for queries."
+      },
+      {
+        "S. No.": "4.",
+        "SQL": "SQL databases have\nlimited scalability.",
+        "NO SQL": "NoSQL databases offer\nhigh scalability.",
+        "NEW SQL": "NewSQL databases\nprovide enhanced\nscalability."
+      },
+      {
+        "S. No.": "5.",
+        "SQL": "SQL databases adhere to\nACID properties",
+        "NO SQL": "NoSQL databases have\nvarying compliance.",
+        "NEW SQL": "NewSQL databases\nmaintain ACID\ncompliance."
+      },
+      {
+        "S. No.": "6.",
+        "SQL": "SQL databases generally\ndo not have a distributed\narchitecture as a\ncharacteristic feature.",
+        "NO SQL": "NoSQL databases are\nspecifically designed to\noperate in distributed\nenvironments.",
+        "NEW SQL": "NewSQL databases are\nspecifically engineered\nwith distributed\narchitecture as a core\nprinciple."
+      },
+      {
+        "S. No.": "7.",
+        "SQL": "SQL databases support\ntransactions.",
+        "NO SQL": "NoSQL databases may\nhave varied transaction\nsupport.",
+        "NEW SQL": "NewSQL databases offer\ntransaction support."
+      },
+      {
+        "S. No.": "8.",
+        "SQL": "SQL databases are\nsuitable for traditional\napplications with\nstructured data.",
+        "NO SQL": "NoSQL databases excel\nwith unstructured and\ndiverse data.",
+        "NEW SQL": "NewSQL databases cater\nto scalable applications\nwith relational data and\nACID compliance."
+      }
+    ],
+    "columns": [
+      "S. No.",
+      "SQL",
+      "NO SQL",
+      "NEW SQL"
+    ],
+    "shape": [
+      8,
+      4
+    ]
+  }
+]

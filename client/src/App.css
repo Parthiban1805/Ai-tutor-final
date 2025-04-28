@@ -1,0 +1,47 @@
+/* Default (light) theme */
+:root {
+    --chatgpt-dark: #1a202c;
+    --chatgpt-dark-hover: #2d3748;
+    --chatgpt-light-bg: #f7fafc;
+    --chatgpt-light-sidebar: #edf2f7;
+    --chatgpt-text: #ffffff;
+    --chatgpt-text-light: #2d3748;
+    --chatgpt-secondary: #718096;
+    --chatgpt-border: #e2e8f0;
+    --chatgpt-border-light: #cbd5e0;
+    --chatgpt-accent: #3182ce;
+    --chatgpt-accent-hover: #2b6cb0;
+    --chatgpt-disabled: #a0aec0;
+    --chatgpt-disabled-light: #e2e8f0;
+    --chatgpt-user: #2b6cb0;
+    --chatgpt-user-light: #4299e1;
+    --chatgpt-assistant: #edf2f7;
+    --chatgpt-assistant-light: #e2e8f0;
+    --chatgpt-error: #e53e3e;
+    --chatgpt-input: #ffffff;
+    --chatgpt-input-border: #cbd5e0;
+  }
+  
+  /* Dark theme */
+  [data-theme='dark'] {
+    --chatgpt-dark: #2d3748;
+    --chatgpt-dark-hover: #4a5568;
+    --chatgpt-light-bg: #1a202c;
+    --chatgpt-light-sidebar: #2d3748;
+    --chatgpt-text: #e2e8f0;
+    --chatgpt-text-light: #e2e8f0;
+    --chatgpt-secondary: #a0aec0;
+    --chatgpt-border: #4a5568;
+    --chatgpt-border-light: #4a5568;
+    --chatgpt-accent: #63b3ed;
+    --chatgpt-accent-hover: #4299e1;
+    --chatgpt-disabled: #718096;
+    --chatgpt-disabled-light: #718096;
+    --chatgpt-user: #4299e1;
+    --chatgpt-user-light: #63b3ed;
+    --chatgpt-assistant: #2d3748;
+    --chatgpt-assistant-light: #4a5568;
+    --chatgpt-error: #f56565;
+    --chatgpt-input: #2d3748;
+    --chatgpt-input-border: #4a5568;
+  }

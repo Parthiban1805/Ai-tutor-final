@@ -1,0 +1,122 @@
+[
+  {
+    "page": 1,
+    "table_num": 1,
+    "data": [
+      {
+        "DATA": "Derived from Latin word\n\u2018Datum\u2019",
+        "INFORMATION": "Derived from word \u2018informare\u2019"
+      },
+      {
+        "DATA": "Data is raw fact",
+        "INFORMATION": "Processed form of data"
+      },
+      {
+        "DATA": "May or may not be meaningful",
+        "INFORMATION": "Always meaningful"
+      },
+      {
+        "DATA": "Input to any system may be\ntreated as data.",
+        "INFORMATION": "Output after processing system is information."
+      },
+      {
+        "DATA": "Understanding is difficult.",
+        "INFORMATION": "Understanding is easy."
+      },
+      {
+        "DATA": "",
+        "INFORMATION": ""
+      },
+      {
+        "DATA": "Data may not be in order",
+        "INFORMATION": "Information should be in order."
+      },
+      {
+        "DATA": "Example: Survey data",
+        "INFORMATION": "Example: census report"
+      }
+    ],
+    "columns": [
+      "DATA",
+      "INFORMATION"
+    ],
+    "shape": [
+      8,
+      2
+    ]
+  },
+  {
+    "page": 10,
+    "table_num": 1,
+    "data": [
+      {
+        "S. No.": "1",
+        "Category": "Definition",
+        "Database": "A database is a collection of\nconnected information about\npeople, locations, or things.",
+        "DBMS": "A database management system\n(DBMS) is a collection of\nprograms that allow you to\ncreate, manage, and operate a\ndatabase."
+      },
+      {
+        "S. No.": "2.",
+        "Category": "Storage",
+        "Database": "Besides computers, databases can\neven be maintained in physical\nledgers, books, or papers.",
+        "DBMS": "In a database management system\n(DBMS), all the records are\nmaintained only on a computer."
+      },
+      {
+        "S. No.": "3.",
+        "Category": "Data Retrieval",
+        "Database": "The retrieval of information from\nthe databases can be done\nmanually, through queries, or by",
+        "DBMS": "We can retrieve the data from the\ndatabase management system\nthrough queries written in SQL."
+      }
+    ],
+    "columns": [
+      "S. No.",
+      "Category",
+      "Database",
+      "DBMS"
+    ],
+    "shape": [
+      3,
+      4
+    ]
+  },
+  {
+    "page": 11,
+    "table_num": 1,
+    "data": [
+      {
+        "Col0": "4.",
+        "Col1": "Speed",
+        "using programs (C, C++, Java,\netc.).": "As databases can be handled\nmanually or via computers, when\nSQL is not used to retrieve\ninformation, it can be very slow.",
+        "Col3": "As a computer system is involved\nin a database management\nsystem, the retrieval of\ninformation is very quick."
+      },
+      {
+        "Col0": "5.",
+        "Col1": "Access",
+        "using programs (C, C++, Java,\netc.).": "The databases are not designed for\na large number of people who can\naccess data at the same time,\nrather it is designed for a very\nsmall number of people\n(preferably few people) who\naccess data at different times.",
+        "Col3": "The database management\nsystem is designed for a large\nnumber of people who can access\nthe data at the same time."
+      },
+      {
+        "Col0": "6.",
+        "Col1": "Data",
+        "using programs (C, C++, Java,\netc.).": "Data is stored in databases.",
+        "Col3": "A database management system\n(DBMS) manages and\nmanipulates data."
+      },
+      {
+        "Col0": "7.",
+        "Col1": "Data Manipulation",
+        "using programs (C, C++, Java,\netc.).": "In the case of the databases, very\nless information can be modified\nat a time.",
+        "Col3": "In the database management\nsystem (DBMS), a lot of\ninformation can be changed at\none time (as it can have many\nusers using it at the same time)."
+      }
+    ],
+    "columns": [
+      "Col0",
+      "Col1",
+      "using programs (C, C++, Java,\netc.).",
+      "Col3"
+    ],
+    "shape": [
+      4,
+      4
+    ]
+  }
+]

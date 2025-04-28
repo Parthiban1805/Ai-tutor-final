@@ -1,0 +1,32 @@
+[
+  {
+    "page": 4,
+    "table_num": 1,
+    "data": [
+      {
+        "Difference between Base Properties and ACID Properties": "ACID",
+        "Col1": "BASE"
+      },
+      {
+        "Difference between Base Properties and ACID Properties": "ACID (Atomicity, Consistency, Isolation,\nDurability) is a set of properties that\nguarantee the integrity and consistency of\ndata in a traditional database.",
+        "Col1": "The BASE properties are a more relaxed\nversion of ACID that trade off some\nconsistency guarantees for greater\nscalability and availability."
+      },
+      {
+        "Difference between Base Properties and ACID Properties": "The primary difference between the two is\nthat ACID requires immediate consistency,",
+        "Col1": "while BASE only requires eventual\nconsistency."
+      },
+      {
+        "Difference between Base Properties and ACID Properties": "ACID is better suited to traditional\ntransactional databases.",
+        "Col1": "The BASE is more suitable for use in\nlarge-scale, highly-available systems,"
+      }
+    ],
+    "columns": [
+      "Difference between Base Properties and ACID Properties",
+      "Col1"
+    ],
+    "shape": [
+      4,
+      2
+    ]
+  }
+]
