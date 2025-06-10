@@ -50,6 +50,12 @@ const upload = multer({
 
 // ─── API ROUTES ────────────────────────────────────────────────────────────────
 
+// GET server response for checking
+app.get('/', (req, res) => {
+  res.send('AITutor backend is running!');
+});
+
+
 // GET all documents
 app.get('/api/documents', async (req, res) => {
   try {
